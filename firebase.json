@@ -1,0 +1,12 @@
+{
+  "hosting": {
+    "public": "dist/norvin-grace-wedding",
+    "ignore": ["**/.*"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

@@ -1,13 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>NorvinGraceWedding</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Norvin & Grace Wedding</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+    <meta name="theme-color" content="#9db1bb" />
+
+    <meta name="description" content="Norvin & Grace Wedding" />
+    <meta name="keywords" content="norvin, grace, wedding" />
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Norvin & Grace Wedding" />
+    <meta property="og:title" content="Norvin & Grace Wedding" />
+    <meta property="og:description" content="Norvin & Grace Wedding" />
+    <meta property="og:url" content="https://norvingracewedding.web.app/" />
+    <meta
+      property="og:image"
+      content="https://norvingracewedding.web.app/assets/cover.jpg"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://norvingracewedding.web.app/assets/cover.jpg"
+    />
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyAyCj8GbWMHEGFLczJdrQybyeaj73bwCio",
+        authDomain: "norvingracewedding.firebaseapp.com",
+        projectId: "norvingracewedding",
+        storageBucket: "norvingracewedding.appspot.com",
+        messagingSenderId: "1085831053256",
+        appId: "1:1085831053256:web:e5a3db0c68f7d75e5fcafd",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
+  </head>
+  <body>
+    <app-root></app-root>
+  </body>
 </html>

@@ -1,0 +1,166 @@
+@media (max-width: 820px) {
+  .s1 {
+    min-height: 100vh;
+    .content {
+      margin-top: 10rem;
+
+      h1 {
+        font-size: 7rem;
+      }
+    }
+  }
+
+  .s2 {
+    padding-bottom: 14rem;
+    background-position-y: bottom;
+    .our,
+    .story {
+      top: 10rem;
+      font-size: 7rem;
+    }
+    .our {
+      margin-left: -16rem;
+    }
+    .story {
+      margin-right: -13rem;
+    }
+  }
+
+  .s2-2nd .content-container {
+    margin-top: 7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .s1 {
+    min-height: 125vh;
+    .content {
+      margin-top: 4rem;
+      img {
+        max-width: 175px;
+      }
+      h1 {
+        font-size: 3.5rem;
+      }
+
+      .subtitle {
+        &:before {
+          left: -70px;
+          max-width: 55px;
+        }
+
+        &:after {
+          right: -70px;
+          max-width: 55px;
+        }
+      }
+
+      .wrapper {
+        min-width: 375px;
+      }
+    }
+  }
+
+  .s2 {
+    padding-bottom: 8rem;
+    background-position-y: bottom;
+    .our,
+    .story {
+      font-size: 3.5rem;
+      top: 11rem;
+    }
+
+    .content-container {
+      margin-top: 18rem;
+      padding: 1rem;
+
+      .content {
+        padding: 2rem 3rem;
+
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .s3 {
+    .container {
+      .row {
+        padding: 1rem;
+        .sched {
+          padding: 1rem;
+
+          .wedding-container {
+            h1 {
+              font-size: 3.5rem;
+            }
+            .date {
+              font-size: 2.5rem;
+              &:before,
+              &:after {
+                content: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .s4 {
+    .container {
+      .row {
+        padding: 1rem;
+
+        .gifts {
+          h1 {
+            font-size: 3.5rem;
+          }
+
+          .accounts {
+            flex-flow: column;
+
+            .details {
+              margin-top: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .s1 {
+    .content {
+      .wrapper {
+        min-width: 325px;
+      }
+    }
+  }
+
+  .s2 {
+    .content-container {
+      .content {
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .s3 {
+    .container {
+      .row {
+        .sched {
+          .wedding-container {
+            h1 {
+              font-size: 3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

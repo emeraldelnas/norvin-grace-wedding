@@ -1,1 +1,474 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,300;0,600;0,900;1,400&display=swap");
+
+@import "variables";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.cursive {
+  font-family: "Great Vibes", cursive;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.s1 {
+  /* The image used */
+  background-image: url("assets/bg-image.jpg");
+
+  /* Set a specific height */
+  min-height: 100vh;
+  margin: 0;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .content {
+    color: #fff;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    img {
+      max-width: 200px;
+    }
+
+    .subtitle {
+      position: relative;
+      font-weight: 600;
+      letter-spacing: 5px;
+
+      &:before {
+        position: absolute;
+        top: 50%;
+        left: -150px;
+        content: "";
+        width: 100%;
+        max-width: 130px;
+        height: 2px;
+        background: #fff;
+      }
+
+      &:after {
+        position: absolute;
+        top: 50%;
+        right: -140px;
+        content: "";
+        width: 100%;
+        max-width: 130px;
+        height: 2px;
+        background: #fff;
+      }
+    }
+
+    h1 {
+      font-size: 8rem;
+      margin-top: 1.5rem;
+    }
+
+    .wrapper {
+      min-width: 500px;
+      margin: 0 auto;
+      margin-top: 3rem;
+      font: normal 14px sans-serif;
+      .targe-date {
+        text-align: center;
+      }
+      h4 {
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        margin-bottom: 2rem;
+        font-weight: 600;
+      }
+      .description,
+      .times {
+        display: flex;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+
+        > p {
+          width: 100%;
+          max-width: 25%;
+
+          margin: 10px 0 0 0;
+          text-align: center;
+        }
+      }
+      .times {
+        font-size: 3rem;
+      }
+      .description {
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
+
+.s2 {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  // padding-bottom: 19rem;
+  // background-image: url(assets/blue-floral-1.png);
+  // background-repeat: no-repeat;
+  // background-position: bottom;
+  // background-position-y: 48rem;
+  // background-size: 80%;
+
+  .couple-img {
+    position: absolute;
+    max-width: 300px;
+    border-radius: 99999rem;
+    border: solid 12px #fff;
+    top: -8rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .our,
+  .story {
+    color: #9db1bb;
+    font-size: 7rem;
+  }
+
+  .our {
+    position: absolute;
+    top: 3rem;
+    margin-left: -30rem;
+  }
+
+  .story {
+    position: absolute;
+    top: 3rem;
+    margin-right: -32rem;
+  }
+}
+
+.s2-2nd {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  padding-bottom: 10rem;
+  // background-image: url(assets/blue-floral-1.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 1000px;
+  overflow: hidden;
+
+  .content-container {
+    margin-top: 15rem;
+    position: relative;
+
+    &:before {
+      content: "";
+      background-image: url("assets/ate-grace-solo.png");
+      position: absolute;
+      width: 1000px;
+      height: 1000px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      top: -15rem;
+      left: -34rem;
+    }
+
+    &:after {
+      content: "";
+      background-image: url("assets/norvin-solo.png");
+      position: absolute;
+      width: 1000px;
+      height: 1000px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      top: -15rem;
+      right: -54rem;
+    }
+
+    .content {
+      position: relative;
+      max-width: 800px;
+      margin: auto;
+      padding: 3rem 4rem;
+      text-align: center;
+
+      p {
+        color: #222;
+        font-size: 18px;
+        line-height: 2.4em;
+        text-align: center;
+
+        &:before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          content: "";
+          border: 1px solid rgba(0, 0, 0, 0.15);
+          z-index: -1;
+          -webkit-transform: rotate(-1deg);
+          -ms-transform: rotate(-1deg);
+          transform: rotate(-1deg);
+        }
+
+        &:after {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          content: "";
+          border: 1px solid rgba(0, 0, 0, 0.15);
+          z-index: -1;
+          -webkit-transform: rotate(1deg);
+          -ms-transform: rotate(1deg);
+          transform: rotate(1deg);
+        }
+      }
+
+      > img {
+        max-width: 130px;
+        margin: auto;
+        margin-top: 2rem;
+      }
+    }
+  }
+
+
+
+  .floral-1 {
+    position: absolute;
+  }
+}
+
+.s3 {
+  background-image: url("assets/un-floral.jpg");
+
+  /* Set a specific height */
+  // min-height: 125vh;
+  margin: 0;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 7rem 0;
+
+  .container {
+    text-align: center;
+
+    .sched {
+      border-radius: 0.6rem;
+      padding: 4rem 2rem;
+
+      .wedding-container {
+        position: relative;
+        padding: 3rem 0;
+        margin-top: 2rem;
+
+        &:before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          content: "";
+          border: 1px solid rgba(0, 0, 0, 0.15);
+          -webkit-transform: rotate(-1deg);
+          -ms-transform: rotate(-1deg);
+          transform: rotate(-1deg);
+        }
+
+        &:after {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          content: "";
+          border: 1px solid rgba(0, 0, 0, 0.15);
+          -webkit-transform: rotate(1deg);
+          -ms-transform: rotate(1deg);
+          transform: rotate(1deg);
+        }
+
+        h1 {
+          color: #9db1bb;
+          font-size: 5rem;
+          margin-bottom: 2rem;
+        }
+        .date {
+          color: #444;
+          display: inline;
+          font-size: 3rem;
+          font-weight: 600;
+          margin-bottom: 0;
+          position: relative;
+
+          // &:before {
+          //   position: absolute;
+          //   top: 50%;
+          //   left: -60%;
+          //   content: "";
+          //   width: 100%;
+          //   max-width: 130px;
+          //   height: 2px;
+          //   background: #9db1bb;
+          // }
+
+          // &:after {
+          //   position: absolute;
+          //   top: 50%;
+          //   right: -60%;
+          //   content: "";
+          //   width: 100%;
+          //   max-width: 130px;
+          //   height: 2px;
+          //   background: #9db1bb;
+          // }
+        }
+        .time {
+          font-size: 1.5rem;
+        }
+        .location {
+          font-size: 1.2rem;
+          margin-top: 4rem;
+        }
+      }
+
+      .second-part {
+        max-width: 500px;
+        margin: auto;
+        padding-top: 6rem;
+
+        .hybrid {
+          color: #9db1bb;
+          font-size: 1.5rem;
+          font-weight: 600;
+          display: inline-block;
+          padding: 0.6rem 1rem;
+          border-radius: 10px;
+        }
+
+        .color-palette {
+          display: flex;
+          justify-content: center;
+          gap: 1rem;
+          flex-wrap: wrap;
+
+          .palette {
+            width: 60px;
+            height: 60px;
+            background-color: #eff2f3;
+            border-radius: 99999rem;
+
+            &.pl1 {
+              background-color: #f2dec3;
+            }
+
+            &.pl2 {
+              background-color: #e1b5c4;
+            }
+
+            &.pl3 {
+              background-color: #dda73a;
+            }
+
+            &.pl4 {
+              background-color: #b4bfbb;
+            }
+          }
+        }
+
+        .zoom-container {
+          img {
+            width: 100%;
+            max-width: 250px;
+          }
+        }
+
+        .closing {
+          margin-top: 5rem;
+
+          p:nth-child(3) {
+            color: #9db1bb;
+            font-size: 2rem;
+          }
+
+          img {
+            margin-top: 3rem;
+            max-width: 130px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.s4 {
+  color: #444;
+  padding: 7rem 0;
+  text-align: center;
+  background-color: #a5b7c0;
+
+  .gifts {
+    border-radius: 0.6rem;
+    padding: 4rem 2rem;
+    h1 {
+      color: #9db1bb;
+      font-size: 5rem;
+    }
+
+    .note {
+      max-width: 500px;
+      margin: auto;
+      margin-top: 3rem;
+      line-height: 1.8em;
+    }
+
+    .accounts {
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 4rem;
+
+      .account {
+        .logo {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          max-width: 350px;
+          min-height: 100px;
+        }
+      }
+
+      .details {
+        margin-top: 2rem;
+
+        p:first-child {
+          font-weight: 600;
+          letter-spacing: 3px;
+          margin-bottom: 0.4rem;
+        }
+      }
+    }
+  }
+}
+
+.w-800 {
+  width: 100%;
+  max-width: 800px;
+}
+
+@import "media-queries";
+
+html,
+body {
+  height: 100%;
+}
