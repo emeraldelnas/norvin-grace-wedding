@@ -44,8 +44,25 @@
         happen for his love, commitment and for the glory of God.
       </p>
     </div>
+
+    <div class="verse-1 text-center">
+      <p><em>"He has made everything beautiful in its time."</em></p>
+      <p>Ecclesiastes 3:11</p>
+    </div>
   </div>
+
+
 </div>
+
+
+<div class="gallery">
+  <lightgallery [settings]="settings" [onInit]="onInit">
+    <a *ngFor="let item of items" [attr.data-lg-size]="item.size" className="gallery-item" [attr.href]="item.src">
+      <img className="img-responsive" src="{{ item.thumb }}" loading="lazy" />
+    </a>
+  </lightgallery>
+</div>
+
 
 <div class="s3">
   <div class="container">
@@ -67,27 +84,52 @@
             celebration of our wedding via Zoom.
           </p>
 
-          <div class="zoom-container mt-5">
-            <a href="https://zoom.us/j/94452043263?pwd=eWhVSXlRQjZZMEkySGV1SUtCRGxMQT09" target="_blank">
-              <img src="assets/zoom-logo.png" alt="zoom-logo" />
-              <p class="mt-3 fs-5">Click here to join</p>
-            </a>
+          <div>
+            <p>
+              To ensure a seamless virtual experience on Zoom, kindly use our custom-designed Zoom background. Download and set it as your virtual backdrop:
+            </p>
+            <img class="img-fluid" src="assets/zoom-bg.png" alt="Zoom backdrop">
+            <a class="btn btn-primary mt-3" href="assets/zoom-bg.png" download="zoom-background.png" title="Zoom backdrop">Download Zoom background</a>
+
+            <div class="py-4"></div>
+
+            <p>
+              If possible, please follow our dress code color palette:
+            </p>
+            <div class="color-palette">
+              <div class="palette pl1"></div>
+              <div class="palette pl2"></div>
+              <div class="palette pl3"></div>
+              <div class="palette pl4"></div>
+            </div>
           </div>
 
-          <br>
-          <p>
-            If possible, kindly follow our dress code color palette:
-          </p>
-          <div class="color-palette">
-            <div class="palette pl1"></div>
-            <div class="palette pl2"></div>
-            <div class="palette pl3"></div>
-            <div class="palette pl4"></div>
+          <div class="py-4"></div>
+
+          <div class="zoom-container mt-5">
+            <p class="fs-5 mb-5" style="color: #555;font-weight: 600;">To <em>join</em> the virtual celebration via zoom, please click the link below:</p>
+
+
+            <div class="d-inline-grid gap-4">
+              <a href="https://zoom.us/j/94452043263?pwd=eWhVSXlRQjZZMEkySGV1SUtCRGxMQT09" target="_blank">
+                <img src="assets/zoom-logo.png" alt="zoom-logo" />
+              </a>
+              <a class="btn btn-primary" href="https://zoom.us/j/94452043263?pwd=eWhVSXlRQjZZMEkySGV1SUtCRGxMQT09" target="_blank">
+                Click here to join us!
+              </a>
+
+              <div class="verse-2 text-center mt-4">
+                <p><em>"The Lord God said, 'It is not good for the man to be alone. I will make a helper suitable for him.'"</em></p>
+                <p>Genesis 2:18</p>
+              </div>
+            </div>
           </div>
+
+
 
           <div class="closing">
             <p>
-              We hope you will join us this special and memorable occasion. 
+              We hope you will join us this special and memorable occasion.
             </p>
             <p>With love,</p>
             <p class="cursive">Norvin & Grace</p>
